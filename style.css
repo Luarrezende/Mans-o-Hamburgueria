@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: brown;
+  background-color: black;
 }
 
 header {
@@ -31,11 +31,22 @@ a {
   cursor: pointer;
   opacity: 0.8;
   padding: 0 10px;
-  transition: 0.7s;
+  transition: 0.5s;
   font-size: 22px;
 }
 
 .navBar a:hover {
+  color:brown;
   cursor: pointer;
   opacity: 1;
+}
+
+.sectionMain {
+  background-image: url(img/background.png);
+  min-height: 50vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 170px;
 }
