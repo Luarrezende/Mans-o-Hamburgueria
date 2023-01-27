@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: churras;
+  src: url('./fonts/Intro-Rust-G-Base-2-Line.ttf.woff');
+}
+
 body {
   background-color: black;
 }
 
 header {
-  background-color: white;
+  background-color: #d7d7d7;
   width: 100%;
   position: fixed;
   padding: 5px 20px;
@@ -17,6 +22,16 @@ header {
   justify-content: space-between;
   align-items: center;
   box-shadow: 1px 1px 5px black;
+}
+
+.churras {
+  font-family: churras;
+}
+
+main {
+  padding-top: 65px;
+  display: flex;
+  flex-direction: column;
 }
 
 .navBar {
@@ -42,11 +57,25 @@ a {
 }
 
 .sectionMain {
-  background-image: url(img/background.png);
-  min-height: 50vh;
+  background-image: url(img/background.jpg);
+  min-height: 90vh;
   background-size: cover;
+}
+
+.sectionMain p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  padding-top: 50px;
+  padding-left: 60px;
+  max-width: 35%;
+  font-family: churras;
+}
+
+.menu {
   display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 170px;
+  padding-top: 50px;
+  background-color: #d7d7d7;
+  display: flex;
+  justify-content: center;
 }
